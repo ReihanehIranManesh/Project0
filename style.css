@@ -1,0 +1,108 @@
+#search-input
+{
+  position: relative;
+  margin-right: 150px
+}
+.inputWithIcon input[type = text]
+{
+  padding-left: 40px;
+}
+.inputWithIcon
+{
+  position: relative;
+}
+.inputWithIcon i
+{
+  position: absolute;
+  left: 0;
+  top: 3px;
+  padding: 9px 8px;
+  Transition : 3s;
+}
+
+.hover-icon {
+  position: fixed;
+  bottom: auto;
+  right: 0;
+  color: #000;
+  text-decoration: none;
+  margin-right: 140px
+}
+
+.hover-icon:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.hover-icon:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.hover-icon:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#butt
+{
+  position: fixed;
+  bottom: auto;
+  right: 0;
+  width : 85px;
+  height: 43px;
+  background-color: #000;
+  color: white;
+  border-radius: 12px;
+  font-Family : inherit;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#butt:hover {
+  opacity: 0.8;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #666666;
+  padding: 8px 20px;
+  text-decoration: none;
+  display: block;
+  font-family: helvetica;
+  font-size: 13px;
+}
+
+.dropdown-content a:hover {
+  color:  #1a1a1a;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}

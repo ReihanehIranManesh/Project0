@@ -1,0 +1,18 @@
+$navlinkcol : #0d0d0d;
+$navlinkcolhover :  #00995c;
+.navbar .navbar-nav .nav-item .nav-link {
+  color: $navlinkcol;
+  font-family: helvetica;
+  font-size: 14px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover
+{
+  color: $navlinkcolhover;
+}
+li i:hover
+{
+  color: $navlinkcolhover;
+}
+
+
+/*# sourceMappingURL=whub.css.map */
