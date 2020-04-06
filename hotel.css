@@ -1,3 +1,12 @@
+.secondinfo {
+  display: none !important;
+}
+
+.hotelph {
+  width: 300px;
+  height: 200px;
+}
+
 .border {
   border-left: none;
   border-bottom: 1px solid #b7b7b7;
@@ -5,12 +14,12 @@
 }
 
 .border:hover {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
   border-left: none;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 .property_title {
-  color: #7c3f69;
+  color: #000a12;
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
@@ -20,6 +29,15 @@
 }
 
 .property_title:hover {
+  color: #000a12;
+  text-decoration: underline;
+}
+
+.property_title:visited {
+  color: #7c3f69;
+}
+
+.property_title:visited:hover {
   color: #7c3f69;
   text-decoration: underline;
 }
@@ -104,6 +122,37 @@
 .rateicon {
   color: #00a680;
   margin: 0;
+}
+
+@media screen and (max-width: 717px) {
+  .info {
+    display: none !important;
+  }
+
+  .secondinfo {
+    display: inherit !important;
+  }
+
+  .hotelph {
+    width: 100%;
+    height: 90%;
+    margin-bottom: 10px;
+  }
+
+  .property_title {
+    margin-left: 10px;
+  }
+
+  .price-hotels {
+    margin-left: 20px;
+  }
+
+  .deal_button {
+    float: right;
+    width: 160px;
+    margin-top: -12px;
+    margin-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=hotel.css.map */

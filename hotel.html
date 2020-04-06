@@ -15,13 +15,74 @@
   <title>Hotels</title>
 </head>
 <body>
-  <nav class="navbar main-nav navbar-light bg-light" style="border-bottom-style: solid ; border-bottom-color : #d1b3ff;width:100%;">
-    <img src="whub.png" alt="WHub" class="mx-auto d-block center mb-1 mt-2" >
-    <form class="float-right">
-      <i id="writereview" class="fa fa-pencil-square-o fa-2x fa-fw mt-2" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Write review"></i>
-      <i id="profile" class="fas fa-user-circle fa-2x fa-fw mt-2" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Profile"></i>
-    </form>
+  <nav class="navbar main-nav navbar-light bg-lights" style="border-bottom-style: solid ; border-bottom-color : #d1b3ff;width:100%;">
+    <button class="navbar-toggler d-block ml-1 mt-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="index.html" class="mx-auto d-block mt-2" >
+      <img src="whub.png" alt="WHub" class="center mr-5">
+    </a>
   </nav>
+  <div class="collapse navbar-collapse ml-3" id="navbarSupportedContent">
+    <a href="login.html">
+      <button id = "buttlogin" class="btn" type="button" name="button">Log in</button>
+    </a>
+    <br>
+    <a href="signup.html">
+      <button id = "buttjoin" class="btn" type="button" name="button">Join</button>
+    </a>
+    <div>
+      <a class="colpse-items-hr mt-3" style="color : #000">Post<i class="fa fa-angle-down fa-lg fa-fw" style="color : #000" aria-hidden="true"></i>
+        <a href="#Postphotos" class="colpse-items-hr">
+          <i class="fas fa-camera" aria-hidden="true" style="color : #8600b3;"></i>
+          Post photos
+        </a>
+        <a href="#UserReview" class="colpse-items-hr">
+          <i class="fa fa-pencil-square-o" aria-hidden="true" style="color: #8600b3"></i>
+          Write review
+        </a>
+      </a>
+
+      <a class="collapse-items" href="#Trips" arial-label = "Trips">
+        <span class="colap-items">Trips</span>
+      </a>
+      <a class="collapse-items" href="#Bookings" arial-label = "Bookings">
+        <span class="colap-items">Bookings</span>
+      </a>
+      <a class="collapse-items" href="#Inbox" arial-label = "Inbox">
+        <span class="colap-items">Inbox</span>
+      </a>
+    </div>
+    <hr>
+    <a href="hotel.html" class="colpse-items-hr">
+      <i class="fas fa-hotel" aria-hidden="true"></i>
+      Hotels
+    </a>
+    <a href="#Attractions" class="colpse-items-hr">
+      <i class="fas fa-tasks" aria-hidden="true"></i>
+      Things to do
+    </a>
+    <a href="#Restaurants" class="colpse-items-hr">
+      <i class="fas fa-utensils" aria-hidden="true"></i>
+      Restaurants
+    </a>
+    <a href="#Flights" class="colpse-items-hr">
+      <i class="fas fa-plane"  aria-hidden="true"></i>
+      Flights
+    </a>
+    <a href="#Rentals" class="colpse-items-hr">
+      <i class="fas fa-home"  aria-hidden="true"></i>
+      Vacation Rentals
+    </a>
+    <a href="#Cruises" class="colpse-items-hr">
+      <i class="fas fa-ship"  aria-hidden="true"></i>
+      Cruises
+    </a>
+    <a class="colpse-items-hr" style="color : #000">More<i class="fa fa-angle-down fa-lg fa-fw" style="color : #000" aria-hidden="true"></i>
+      <a href="#TravelersChoice" class="colpse-items-hr">Best of 2020</a>
+      <a href="#Help" class="colpse-items-hr">Help Center</a>
+    </a>
+  </div>
   <div class="container">
     <div class="row mt-4">
       <div class="inputWithIcon col-10 col-sm-10 col-md-5 col-lg-5 col-xl-5 mr-4">
@@ -86,10 +147,9 @@
       </datalist>
     </div>
   </div>
-
-  <div class="d-flex flex-row mt-5">
-    <div style="margin-left : 10%">
-      <img src="hotel.jpg" class="d-inline" width="300px" height="200px">
+  <div class="d-flex flex-row mt-5 ml-5 info">
+    <div >
+      <img src="Borgata Hotel Casino & Spa.jpg" class="d-inline hotelph">
     </div>
     <div class="d-flex flex-row border">
       <div class="d-flex flex-column mt-4 ml-4">
@@ -123,6 +183,185 @@
           </li>
         </ul>
       </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column border secondinfo mt-4" style="margin-left: 5%;margin-right: 5%;">
+    <div>
+      <img src="Borgata Hotel Casino & Spa.jpg" class="d-inline hotelph">
+    </div>
+    <a href="https://www.theborgata.com/" id="propertytitle" class="property_title">Borgata Hotel Casino &amp; Spa</a>
+    <div class="mt-2 ml-2">
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <a class="review_count">6,490 reviews</a>
+    </div>
+    <div class="checkmsg ml-2">
+      <span class="iconcheckmark"><i class="fas fa-check"></i></span>
+      <span class="message">Free cancellation</span>
+    </div>
+    <div>
+      <span class="price-hotels">$89</span>
+      <span class="deal_button mb-1">View Deal</span>
+    </div>
+  </div>
+
+  <div class="d-flex flex-row mt-5 ml-5 info">
+    <div >
+      <img src="Hyatt Regency Jersey City.jpg" class="d-inline hotelph">
+    </div>
+    <div class="d-flex flex-row border">
+      <div class="d-flex flex-column mt-4 ml-4">
+        <a href="https://www.hyatt.com/en-US/hotel/new-jersey/hyatt-regency-jersey-city-on-the-hudson/newjp" id="propertytitle" class="property_title">Hyatt Regency Jersey City</a>
+        <span class="price-hotels">$289</span>
+        <span class="deal_button">View Deal</span>
+        <div class="checkmsg">
+          <span class="iconcheckmark"><i class="fas fa-check"></i></span>
+          <span class="message">Free cancellation</span>
+        </div>
+      </div>
+      <div class="d-block mt-4 ml-4">
+        <i class="fas fa-circle rateicon"></i>
+        <i class="fas fa-circle rateicon"></i>
+        <i class="fas fa-circle rateicon"></i>
+        <i class="fas fa-circle rateicon"></i>
+        <i class="fas fa-circle rateicon"></i>
+        <a class="review_count">3,640 reviews</a>
+        <ul class="mt-2">
+          <li>
+            <span class="icon"><i class="fas fa-wifi" aria-hidden="true" ></i></span>
+            <span class="text">Free Wifi</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fas fa-swimmer" aria-hidden="true"></i></span>
+            <span class="text">Pool</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column border secondinfo mt-4" style="margin-left: 5%;margin-right: 5%;">
+    <div>
+      <img src="Hyatt Regency Jersey City.jpg" class="d-inline hotelph">
+    </div>
+    <a href="https://www.theborgata.com/" id="propertytitle" class="property_title">Hyatt Regency Jersey City</a>
+    <div class="mt-2 ml-2">
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <a class="review_count">3,640 reviews</a>
+    </div>
+    <div class="checkmsg ml-2">
+      <span class="iconcheckmark"><i class="fas fa-check"></i></span>
+      <span class="message">Free cancellation</span>
+    </div>
+    <div>
+      <span class="price-hotels">$289</span>
+      <span class="deal_button mb-1">View Deal</span>
+    </div>
+  </div>
+
+  <div class="d-flex flex-row mt-5 ml-5 info">
+    <div >
+      <img src="Ramada by Wyndham Jersey City.jpg" class="d-inline hotelph">
+    </div>
+    <div class="d-flex flex-row border">
+      <div class="d-flex flex-column mt-4 ml-4">
+        <a href="https://www.hyatt.com/en-US/hotel/new-jersey/hyatt-regency-jersey-city-on-the-hudson/newjp" id="propertytitle" class="property_title">Ramada by Wyndham Jersey City</a>
+        <span class="price-hotels">$102</span>
+        <span class="deal_button">View Deal</span>
+        <div class="checkmsg">
+          <span class="iconcheckmark"><i class="fas fa-check"></i></span>
+          <span class="message">Free cancellation</span>
+        </div>
+      </div>
+      <div class="d-block mt-4 ml-4">
+        <i class="fas fa-circle rateicon"></i>
+        <i class="fas fa-circle rateicon"></i>
+        <i class="fas fa-circle rateicon"></i>
+        <i class="fas fa-circle rateicon"></i>
+        <i class="fas fa-circle rateicon"></i>
+        <a class="review_count">1,285 reviews</a>
+        <ul class="mt-2">
+          <li>
+            <span class="icon"><i class="fas fa-wifi" aria-hidden="true" ></i></span>
+            <span class="text">Free Wifi</span>
+          </li>
+          <li>
+            <span class="icon"><i class="fas fa-running" aria-hidden="true"></i></span>
+            <span class="text">Fitness center</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column border secondinfo mt-4" style="margin-left: 5%;margin-right: 5%;">
+    <div>
+      <img src="Ramada by Wyndham Jersey City.jpg" class="d-inline hotelph">
+    </div>
+    <a href="https://www.theborgata.com/" id="propertytitle" class="property_title">Ramada by Wyndham Jersey City</a>
+    <div class="mt-2 ml-2">
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <i class="fas fa-circle rateicon"></i>
+      <a class="review_count">1,285 reviews</a>
+    </div>
+    <div class="checkmsg ml-2">
+      <span class="iconcheckmark"><i class="fas fa-check"></i></span>
+      <span class="message">Free cancellation</span>
+    </div>
+    <div>
+      <span class="price-hotels">$102</span>
+      <span class="deal_button mb-1">View Deal</span>
+    </div>
+  </div>
+
+  <div class="d-flex flex-row mt-5 ml-5 info">
+    <div >
+      <img src="Hotel Edison NJ Route 1.jpg" class="d-inline hotelph">
+    </div>
+    <div class="d-flex flex-row border">
+      <div class="d-flex flex-column mt-4 ml-4">
+        <a href="https://www.hyatt.com/en-US/hotel/new-jersey/hyatt-regency-jersey-city-on-the-hudson/newjp" id="propertytitle" class="property_title">Hotel Edison NJ Route 1</a>
+        <span class="price-hotels">$60</span>
+        <span class="deal_button">View Deal</span>
+        <div class="checkmsg">
+          <span class="iconcheckmark"><i class="fas fa-check"></i></span>
+          <span class="message">Free cancellation</span>
+        </div>
+      </div>
+      <div class="d-block mt-4 ml-4">
+        <a class="review_count">0 reviews</a>
+        <ul class="mt-2 mr-3">
+          <li>
+            <span class="icon"><i class="fas fa-parking" aria-hidden="true"></i></span>
+            <span class="text">Free parking</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column border secondinfo mt-4" style="margin-left: 5%;margin-right: 5%;">
+    <div>
+      <img src="Hotel Edison NJ Route 1.jpg" class="d-inline hotelph">
+    </div>
+    <a href="https://www.theborgata.com/" id="propertytitle" class="property_title">Hotel Edison NJ Route 1</a>
+    <div class="mt-2 ml-2">
+      <a class="review_count">0 reviews</a>
+    </div>
+    <div class="checkmsg ml-2">
+      <span class="iconcheckmark"><i class="fas fa-check"></i></span>
+      <span class="message">Free cancellation</span>
+    </div>
+    <div>
+      <span class="price-hotels">$60</span>
+      <span class="deal_button mb-1">View Deal</span>
     </div>
   </div>
   <!-- Optional JavaScript -->
