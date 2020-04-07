@@ -36,7 +36,8 @@ html, body {
 @media screen and (max-width: 768px) {
   .center {
     width: 110px;
-    margin-right: 120px;
+    margin-right: 20%;
+    margin-left: 10%;
   }
 
   .dlsrch {
@@ -67,7 +68,7 @@ html, body {
     top: 18px;
   }
 }
-#profile:hover, #writereview:hover {
+#writereview:hover {
   color: #000;
   cursor: pointer;
   opacity: 0.8;
@@ -167,11 +168,11 @@ html, body {
   overflow: hidden;
   text-overflow: ellipsis;
   text-decoration: none;
-  cursor: pointer;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   text-align: center;
+  cursor: pointer;
   font-family: Trip Sans, Arial, sans-serif;
 }
 
@@ -181,42 +182,60 @@ html, body {
   text-decoration: underline;
 }
 
+.cntborder {
+  background-color: #fff;
+}
+
 .big {
   margin-top: 13px;
   width: 13px;
   height: 13px;
 }
 
-#hotelsCheck, #flightsCheck {
+#inlinehotelsCheck, #inlineflightsCheck {
   margin-left: -40px;
 }
 
-#attractionsCheck, #restaurantsCheck {
+#inlineattractionsCheck, #inlinerestaurantsCheck {
   margin-left: -62px;
 }
 
-#rentalsCheck {
+#inlinerentalsCheck {
   margin-left: -78px;
 }
 
-#cruisesCheck {
+#inlinecruisesCheck {
   margin-left: -43px;
 }
 
-@media screen and (max-width: 537px) {
-  #profile, #writereview {
+.tbl-categories {
+  display: none !important;
+}
+
+@media (max-width: 800px) {
+  .ctg {
+    display: none !important;
+  }
+
+  .tbl-categories {
+    display: table !important;
+  }
+
+  #writereview {
     display: none;
   }
 
   .categories {
-    width: 80px;
     height: 82px;
     position: relative;
     overflow: inherit;
     text-overflow: clip;
-    font-size: 12px;
+    font-size: 15px;
   }
 
+  td {
+    background-color: #fff;
+  }
   td span {
     top: -5px;
     left: -20px;
@@ -226,17 +245,37 @@ html, body {
   }
 
   .big {
-    margin-top: 9px;
-    width: 10px;
-    height: 10px;
+    margin-top: 12px;
+    width: 13px;
+    height: 13px;
   }
 
-  #attractionsCheck, #rentalsCheck {
-    margin-left: -47px;
+  #inlineattractionsCheck {
+    margin-left: -60px;
   }
 
-  #restaurantsCheck {
-    margin-left: -50px;
+  #inlinerentalsCheck {
+    margin-left: -75px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .categories {
+    padding: 10px 5px;
+    width: 83px;
+    height: 82px;
+    font-size: 12px;
+  }
+
+  #inlinehotelsCheck, #inlineflightsCheck, #inlinecruisesCheck {
+    margin-left: -30px;
+  }
+
+  #inlineattractionsCheck, #inlinerestaurantsCheck {
+    margin-left: -45px;
+  }
+
+  #inlinerentalsCheck {
+    margin-left: -35px;
   }
 }
 /*# sourceMappingURL=whub.css.map */

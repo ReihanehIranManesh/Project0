@@ -79,10 +79,22 @@ $font : 'Trip Sans', Arial, sans-serif;
   @extend %text;
   top: 300px;
 }
-.Joinbut
+#PasswordConfirmLabel
 {
   @extend %center;
-  top: 380px;
+  @extend %Label;
+  top: 360px;
+}
+#SignUpConfirmpassword
+{
+  @extend %center;
+  @extend %text;
+  top: 400px;
+}
+.Joinbut, .loginJoinbut
+{
+  @extend %center;
+  top: 460px;
   width: 400px;
   margin: 20px 0;
   background: #000;
@@ -104,15 +116,19 @@ $font : 'Trip Sans', Arial, sans-serif;
   font-family: inherit;
   border: 1px solid transparent;
 }
-.Joinbut:hover
+.loginJoinbut
+{
+  top: 380px;
+}
+.Joinbut:hover, .loginJoinbut:hover
 {
   border-color: #292929;
   background-color: #292929;
 }
-.footerNav
+.footerNav, .loginfooterNav
 {
   @extend %center;
-  top: 470px;
+  top: 530px;
   font-size: 16px;
   line-height: 16px;
   margin: 0 0 12px;
@@ -120,6 +136,9 @@ $font : 'Trip Sans', Arial, sans-serif;
   display: block;
   font-family: $font;
   color: #000;
+}
+.loginfooterNav {
+  top: 460px;
 }
 .taLnk
 {
@@ -136,7 +155,7 @@ $font : 'Trip Sans', Arial, sans-serif;
 
 @media screen and (max-width: 425px)
 {
-  #SignUpLabel, #PasswordLabel
+  #SignUpLabel, #PasswordLabel, #PasswordConfirmLabel
   {
     font-size: 14px;
   }
@@ -145,13 +164,13 @@ $font : 'Trip Sans', Arial, sans-serif;
     font-size: 16px;
     content: "Join!";
   }
-  #SignUpemail, #SignUppassword, .Joinbut
+  #SignUpemail, #SignUppassword,#SignUpConfirmpassword, .Joinbut, .loginJoinbut
   {
     font-size: 14px;
     height: 40px;
     width: 250px;
   }
-  .footerNav
+  .footerNav, .loginfooterNav
   {
     font-size: 12.7px;
   }

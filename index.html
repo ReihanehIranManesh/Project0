@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="whub.css">
   <title>WHub</title>
 </head>
-<body>
+<body style="background-color : #f2f2f2">
   <nav class="navbar main-nav navbar-light bg-light" style="border-bottom-style: solid ; border-bottom-color : #d1b3ff;width:100%;">
     <button class="navbar-toggler d-block ml-1 mt-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,6 @@
     <img src="whub.png" alt="WHub" class="d-block mt-2 center" >
     <form class="float-right">
       <i id="writereview" class="fa fa-pencil-square-o fa-2x fa-fw mt-2" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Write review"></i>
-      <i id="profile" class="fas fa-user-circle fa-2x fa-fw mt-2" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Profile"></i>
     </form>
   </nav>
   <div class="collapse navbar-collapse ml-3" id="navbarSupportedContent">
@@ -91,91 +90,91 @@
         <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
       </div>
       <label for="states-choice" class="lb ml-3 mr-3 p-0 mt-3">Location:</label>
-      <input id="dls-input" type="text" name="states-of-america" placeholder="Choose a state:" class="dlsrch form-control col-9 col-sm-9 col-md-4 col-lg-5 col-xl-5" list="states">
-      <datalist id="states">
-        <option value="Everywhere"></option>
-        <option value="Alabama"></option>
-        <option value="Alaska"></option>
-        <option value="Arizona"></option>
-        <option value="Arkansas"></option>
-        <option value="California"></option>
-        <option value="Colorado"></option>
-        <option value="Connecticut"></option>
-        <option value="Delaware"></option>
-        <option value="District of Columbia"></option>
-        <option value="Florida"></option>
-        <option value="Georgia"></option>
-        <option value="Hawaii"></option>
-        <option value="Idaho"></option>
-        <option value="Illinois"></option>
-        <option value="Indiana"></option>
-        <option value="Iowa"></option>
-        <option value="Kansas"></option>
-        <option value="Kentucky"></option>
-        <option value="Louisiana"></option>
-        <option value="Maine"></option>
-        <option value="Maryland"></option>
-        <option value="Massachusetts"></option>
-        <option value="Michigan"></option>
-        <option value="Minnesota"></option>
-        <option value="Mississippi"></option>
-        <option value="Missouri"></option>
-        <option value="Montana"></option>
-        <option value="Nebraska"></option>
-        <option value="Nevada"></option>
-        <option value="New Hampshire"></option>
-        <option value="New Jersey"></option>
-        <option value="New Mexico"></option>
-        <option value="New York"></option>
-        <option value="North Carolina"></option>
-        <option value="North Dakota"></option>
-        <option value="Ohio"></option>
-        <option value="Oklahoma"></option>
-        <option value="Oregon"></option>
-        <option value="Pennsylvania"></option>
-        <option value="Rhode Island"></option>
-        <option value="South Carolina"></option>
-        <option value="South Dakota"></option>
-        <option value="Tennessee"></option>
-        <option value="Texas"></option>
-        <option value="Utah"></option>
-        <option value="Vermont"></option>
-        <option value="Virginia"></option>
-        <option value="Washington"></option>
-        <option value="West Virginia"></option>
-        <option value="Wisconsin"></option>
-        <option value="Wyoming"></option>
-      </datalist>
+      <select id="dls-input" name="states-of-america" class="custom-select dlsrch col-9 col-sm-9 col-md-4 col-lg-5 col-xl-5" list="states">
+        <option selected value="Everywhere">Everywhere</option>
+        <option value="Alabama">Alabama</option>
+        <option value="Alaska">Alaska</option>
+        <option value="Arizona">Arizona</option>
+        <option value="Arkansas">Arkansas</option>
+        <option value="California">California</option>
+        <option value="Colorado">Colorado</option>
+        <option value="Connecticut">Connecticut</option>
+        <option value="Delaware">Delaware</option>
+        <option value="District of Columbia">District of Columbia</option>
+        <option value="Florida">Florida</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="Idaho">Idaho</option>
+        <option value="Illinois">Illinois</option>
+        <option value="Indiana">Indiana</option>
+        <option value="Iowa">Iowa</option>
+        <option value="Kansas">Kansas</option>
+        <option value="Kentucky">Kentucky</option>
+        <option value="Louisiana">Louisiana</option>
+        <option value="Maine">Maine</option>
+        <option value="Maryland">Maryland</option>
+        <option value="Massachusetts">Massachusetts</option>
+        <option value="Michigan">Michigan</option>
+        <option value="Minnesota">Minnesota</option>
+        <option value="Mississippi">Mississippi</option>
+        <option value="Missouri">Missouri</option>
+        <option value="Montana">Montana</option>
+        <option value="Nebraska">Nebraska</option>
+        <option value="Nevada">Nevada</option>
+        <option value="New Hampshire">New Hampshire</option>
+        <option value="New Jersey">New Jersey</option>
+        <option value="New Mexico">New Mexico</option>
+        <option value="New York">New York</option>
+        <option value="North Carolina">North Carolina</option>
+        <option value="North Dakota">North Dakota</option>
+        <option value="Ohio">Ohio</option>
+        <option value="Oklahoma">Oklahoma</option>
+        <option value="Oregon">Oregon</option>
+        <option value="Pennsylvania">Pennsylvania</option>
+        <option value="Rhode Island">Rhode Island</option>
+        <option value="South Carolina">South Carolina</option>
+        <option value="South Dakota">South Dakota</option>
+        <option value="Tennessee">Tennessee</option>
+        <option value="Texas">Texas</option>
+        <option value="Utah">Utah</option>
+        <option value="Vermont">Vermont</option>
+        <option value="Virginia">Virginia</option>
+        <option value="Washington">Washington</option>
+        <option value="West Virginia">West Virginia</option>
+        <option value="Wisconsin">Wisconsin</option>
+        <option value="Wyoming">Wyoming</option>
+      </select>
     </div>
   </div>
-  <table class="table table-bordered mt-5">
+
+  <table class="tbl-categories table table-bordered mt-5">
     <tbody>
       <tr>
         <td>
           <div class="categories" >
             <i class="fas fa-2x fa-hotel" aria-hidden="true"></i>
-            <a class="categories" href="hotel.html">
-              <input class="form-check-input big" type="checkbox" id="hotelsCheck">
-              <span class="categories">Hotels</span>
-            </a>
+            <div class="form-check categories">
+              <input class="form-check-input big" type="checkbox" id="inlinehotelsCheck">
+              <label class="form-check-label categories" for="inlinehotelsCheck">Hotels</label>
+            </div>
           </div>
         </td>
         <td>
           <div class="categories">
             <i class="fas fa-2x fa-tasks" aria-hidden="true"></i>
-            <a class="categories" href="#Attractions">
-              <input class="form-check-input big" type="checkbox" id="attractionsCheck">
-              <span class="categories">Things to do</span>
-            </a>
+            <div class="form-check categories">
+              <input class="form-check-input big" type="checkbox" id="inlineattractionsCheck">
+              <label class="form-check-label categories" for="inlineattractionsCheck">Things to do</label>
+            </div>
           </div>
         </td>
         <td>
           <div class="categories">
             <i class="fas fa-2x fa-utensils" aria-hidden="true"></i>
-            <a class="categories"  href="#Restaurants">
-              <input class="form-check-input big" type="checkbox" id="restaurantsCheck">
-              <span class="categories">Restaurants</span>
-            </a>
+            <div class="form-check categories">
+              <input class="form-check-input big" type="checkbox" id="inlinerestaurantsCheck">
+              <label class="form-check-label categories" for="inlinerestaurantsCheck">Restaurants</label>
+            </div>
           </div>
         </td>
       </tr>
@@ -184,34 +183,85 @@
         <td>
           <div class="categories">
             <i class="fas fa-2x fa-plane"  aria-hidden="true"></i>
-            <a class="categories"  href="#Flights">
-              <input class="form-check-input big" type="checkbox" id="flightsCheck">
-              <span class="categories">Flights</span>
-            </a>
+            <div class="categories">
+              <input class="form-check-input big" type="checkbox" id="inlineflightsCheck">
+              <label class="form-check-label categories" for="inlineflightsCheck">Flights</label>
+            </div>
           </div>
         </td>
         <td>
           <div class="categories">
             <i class="fas fa-2x fa-home"  aria-hidden="true"></i>
-            <a class="categories" href="#Rentals">
-              <input class="form-check-input big" type="checkbox" id="rentalsCheck">
-              <span class="categories">Vacation Rentals</span>
-            </a>
+            <div class="categories">
+              <input class="form-check-input big" type="checkbox" id="inlinerentalsCheck">
+              <label class="form-check-label categories" for="inlinerentalsCheck">Vacation Rentals</label>
+            </div>
           </div>
         </td>
         <td>
           <div class="categories">
             <i class="fas fa-2x fa-ship"  aria-hidden="true"></i>
-            <a class="categories" href="#Cruises">
-              <input class="form-check-input big" type="checkbox" id="cruisesCheck">
-              <span class="categories">Cruises</span>
-            </a>
+            <div class="categories">
+              <input class="form-check-input big" type="checkbox" id="inlinecruisesCheck">
+              <label class="form-check-label categories" for="inlinecruisesCheck">Cruises</label>
+            </div>
           </div>
         </td>
       </tr>
     </tbody>
   </table>
 
+  <div class="ctg d-flex justify-content-center mt-5">
+    <div class="d-flex mt-1" style="background-color : #fff;">
+      <div class="categories" >
+        <i class="fas fa-2x fa-hotel" aria-hidden="true"></i>
+        <div class="form-check categories">
+          <input class="form-check-input big" type="checkbox" id="inlinehotelsCheck">
+          <label class="form-check-label categories" for="inlinehotelsCheck">Hotels</label>
+        </div>
+      </div>
+
+      <div class="categories">
+        <i class="fas fa-2x fa-tasks" aria-hidden="true"></i>
+        <div class="form-check categories">
+          <input class="form-check-input big" type="checkbox" id="inlineattractionsCheck">
+          <label class="form-check-label categories" for="inlineattractionsCheck">Things to do</label>
+        </div>
+      </div>
+
+      <div class="categories">
+        <i class="fas fa-2x fa-utensils" aria-hidden="true"></i>
+        <div class="form-check categories">
+          <input class="form-check-input big" type="checkbox" id="inlinerestaurantsCheck">
+          <label class="form-check-label categories" for="inlinerestaurantsCheck">Restaurants</label>
+        </div>
+      </div>
+
+      <div class="categories">
+        <i class="fas fa-2x fa-plane"  aria-hidden="true"></i>
+        <div class="categories">
+          <input class="form-check-input big" type="checkbox" id="inlineflightsCheck">
+          <label class="form-check-label categories" for="inlineflightsCheck">Flights</label>
+        </div>
+      </div>
+
+      <div class="categories">
+        <i class="fas fa-2x fa-home"  aria-hidden="true"></i>
+        <div class="categories">
+          <input class="form-check-input big" type="checkbox" id="inlinerentalsCheck">
+          <label class="form-check-label categories" for="inlinerentalsCheck">Vacation Rentals</label>
+        </div>
+      </div>
+
+      <div class="categories">
+        <i class="fas fa-2x fa-ship"  aria-hidden="true"></i>
+        <div class="categories">
+          <input class="form-check-input big" type="checkbox" id="inlinecruisesCheck">
+          <label class="form-check-label categories" for="inlinecruisesCheck">Cruises</label>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
